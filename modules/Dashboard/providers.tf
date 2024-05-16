@@ -12,6 +12,6 @@ terraform {
 
 provider "newrelic" {
   account_id = 4438262   # Your New Relic account ID
-  api_key = "NRAK-AVTSPI0MGBRK7UD8ZR1L09OYHBI" # Your New Relic user key
+  api_key = var.api_key # Your New Relic user key
   region = "US"        # US or EU (defaults to US)
 }
